@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DOIT</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <h1>Todo List</h1>
+        <p id="currentDate"></p>
+    </header>
+
+    <section class="stats">
+        <div class="card">Total<br><span id="total">0</span></div>
+        <div class="card">Completed<br><span id="completed">0</span></div>
+        <div class="card">Pending<br><span id="pending">0</span></div>
+        <div class="card">Progress<br><span id="progress">0%</span></div>
+    </section>
+
+    <section class="input-area">
+        <label for="taskInput">Task</label>
+        <input type="text" id="taskInput" placeholder="Add a todo..." />
+        <label for="dateInput">Due Date</label>
+        <input type="date" id="dateInput" />
+        <input type="text" id="userInput" placeholder="Enter something...">
+        <button type="button" id="addBtn">+</button>
+        <ul id="displayList"></ul>
+    </section>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+    </table>
+
+    <footer>
+        Made with ❤️ by <strong>CHINMAI J</strong>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
